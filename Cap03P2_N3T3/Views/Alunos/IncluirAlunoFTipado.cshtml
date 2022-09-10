@@ -1,0 +1,39 @@
+﻿
+@model Cap03P2_N3T3.Models.Alunos
+
+@{
+    ViewBag.Title = "IncluirAlunoFTipado";
+}
+<h2>Incluir Aluno Fortemente Tipado</h2>
+<br />
+<br />
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    @Html.LabelFor(A => A.ID)
+    @Html.TextBoxFor(A => A.ID)
+    @Html.ValidationMessageFor(A => A.ID)
+    <br /><br />
+
+    @Html.LabelFor(A => A.Nome)
+    @Html.TextBoxFor(A => A.Nome)
+    <br /><br />
+
+    @Html.LabelFor(A => A.CPF)
+    @Html.TextBoxFor(A => A.CPF)
+    @Html.ValidationMessageFor(A => A.CPF)
+    <br /><br />
+    <input type="submit" value="Incluir" />
+}
+
+
+
+
+
+
+
+
+
+

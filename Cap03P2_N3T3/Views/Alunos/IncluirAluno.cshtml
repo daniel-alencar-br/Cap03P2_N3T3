@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "IncluirAluno";
+}
+
+<h2>Incluir um novo Aluno</h2>
+
+<br />
+<br />
+
+@using (Html.BeginForm())
+{
+    @Html.Label("Codigo")  <br />
+    @Html.TextBox("id")    <br />
+    @Html.Label("Nome")  <br />
+    @Html.TextBox("nome")    <br />
+    @Html.Label("CPF")  <br />
+    @Html.TextBox("cpf")    <br />
+    <input type="submit" value="Incluir"/>
+}
+
